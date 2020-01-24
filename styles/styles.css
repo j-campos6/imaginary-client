@@ -1,0 +1,62 @@
+body { display: grid;
+       grid-template-columns: 120px 120px 120px;
+       grid-template-areas:
+             "h h h"
+             "b b c"
+             "f f f";
+     grid-template-columns: auto 1fr 20%; }
+  header  {grid-area: h; min-width: 12em; }
+  article {grid-area: b; min-width: 12em; }
+  aside   {grid-area: c; min-width: 12em; }
+  div.container  {grid-area: f; min-width: 12em; }
+
+.aside-header {
+  text-align: center;
+}
+
+.top {
+  background-color: #D3D3D3;
+  height: 100%;
+  }
+
+.testimonials {
+  border-left: solid;
+  border-color: #D3D3D3;
+}
+
+img.bottom{
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 22px;
+  color: white;
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+p {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 16px;
+}
+
+.main-page-text {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 26px;
+}
+
+h2 {
+  font-family: 'Bebas Neue', cursive;
+}
+
+img.jenkins {
+  width: 50%;
+}

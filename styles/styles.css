@@ -13,11 +13,20 @@ body.page-2 { display: grid;
   aside   {grid-area: c; min-width: 12em; }
   div.container  {grid-area: f; min-width: 12em; }
 
+  .hidden {
+    position: relative;
+    left: -10000px;
+    top: auto;
+  }
+  .hidden:focus {
+    left: 0;
+  }
+
   .header {
     padding-left: 10.5REM;
     padding-top: 1.5REM;
     text-indent: 0;
-    background: #1aa3ff;
+    background: #005C99;
     color: white;
     font-size: 25px;
     font-family: sans-serif;
@@ -30,7 +39,7 @@ body.page-2 { display: grid;
     color: white;
     font-size: 30px;
     font-family: sans-serif;
-    background: #1aa3ff;
+    background: #005C99;
   }
 
 .expand-image {
@@ -38,7 +47,7 @@ body.page-2 { display: grid;
 }
 
   ul.breadcrumb {
-    background-color: #1aa3ff;
+    background-color: #005C99;
     padding-bottom: 1.5REM;
     padding-left: 0;
     margin-top: 0;

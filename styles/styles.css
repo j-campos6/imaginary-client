@@ -1,14 +1,75 @@
-body { display: grid;
+body.page-2 { display: grid;
        grid-template-columns: 120px 120px 120px;
        grid-template-areas:
              "h h h"
+             "a a a"
              "b b c"
              "f f f";
      grid-template-columns: auto 1fr 20%; }
-  header  {grid-area: h; min-width: 12em; }
+
+  div.header  {grid-area: h; min-width: 12em; }
+  ul.breadcrumb  {grid-area: a; min-width: 12em; }
   article {grid-area: b; min-width: 12em; }
   aside   {grid-area: c; min-width: 12em; }
   div.container  {grid-area: f; min-width: 12em; }
+
+  .header {
+    padding-left: 10.5REM;
+    padding-top: 1.5REM;
+    text-indent: 0;
+    background: #1aa3ff;
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+  }
+
+  p.sub-header{
+    padding-bottom: 3.5REM;
+    margin-bottom: 0;
+    font-style: italic;
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+    background: #1aa3ff;
+  }
+
+.expand-image {
+  width: 30%;
+}
+
+  ul.breadcrumb {
+    background-color: #1aa3ff;
+    padding-bottom: 1.5REM;
+    padding-left: 0;
+    margin-top: 0;
+    /*text-indent: 8.5REM;*/
+  }
+
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 15px;
+  }
+
+  ul.breadcrumb li+li:before {
+    padding: 6px;
+    color: black;
+    content: "|\00a0";
+    font-weight: bold;
+  }
+
+  ul.breadcrumb li a {
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 14px 16px;
+  }
+
+  ul.breadcrumb li a:hover{
+    background-color: #DCDCDC;
+    padding: 1.5REM;
+  }
+
 
 .aside-header {
   text-align: center;
@@ -57,6 +118,15 @@ h2 {
   font-family: 'Bebas Neue', cursive;
 }
 
+.index {
+  font-size: 50px;
+  font-family: 'Bebas Neue', cursive;
+}
+
 img.jenkins {
   width: 50%;
+}
+
+img.header-img{
+  filter: grayscale(80%);
 }
